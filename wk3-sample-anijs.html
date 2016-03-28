@@ -8,17 +8,19 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 
-		<title>My Website</title>
+		<title>Lasalle - Technical Studies</title>
 
 		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<!-- Bootstrap theme -->
 		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 		<link href="css/mystyle.css" rel="stylesheet">
-		<link href='https://fonts.googleapis.com/css?family=Raleway:400,900' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Gentium+Basic' rel='stylesheet' type='text/css'>
+		<link href='css/anicollection.css' rel='stylesheet' type='text/css'>
 
- 
-
+		<script src="js/scrollreveal.min.js"></script>
+		<script src="js/anijs-min.js"></script>
+		<script src="js/anijs-helper-scrollreveal-min.js"></script>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -29,7 +31,7 @@
 
 	<body role="document">
 		
-		<nav id="mynavbar"  class="navbar navbar-default">
+		<nav id="mynavbar"  class="navbar navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
 					<div class="navbar-brand">
@@ -37,26 +39,41 @@
 					</div>
 				</div>
 				<ul class="nav navbar-nav">
-				    <li><a href="#">Home</a></li>
-				    <li><a href="#">Portfolio</a></li>
-				    <li><a href="#">About</a></li>
-				    <li><a href="#">Contact</a></li>
+				    <li><a class="button-home" href="#">Home</a></li>
+				    <li><a class="button-projects" href="#projects">Portfolio</a></li>
+				    <li><a class="button-about" href="#about">About</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+				    <li><a class="button-contact" href="#">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
 
-		<div class="container-fluid">
+		<div class="container-fluid splash">
 			<div class="row">
 				<div class="col-md-12 my-bg">
+					<div class="content-holder">
+						<div class="header text-center" >
+							Lasalle - Technical Studies
+						</div>
+						<div class="description text-center" >
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</div>
+					</div>
 					
 				</div>
 			</div>
 		</div>
-
-		<div class="container">
+	<a name="projects"></a>
+		<div class="container projects">
 			<div class="row">
-				<div class="col-md-3 project-item col-sm-6 col-xs-10 col-xs-push-1 col-sm-push-0">
-					<img src="http://placehold.it/650x650" alt="this is my project" class="img-responsive img-circle">
+				<div class="col-md-12 text-center header">
+					<h1  data-anijs="if: scroll, on: window, do: swing animated, before: scrollReveal">Projects</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 project-item col-sm-6 col-xs-10 col-xs-push-1 col-sm-push-0"  data-anijs="if: click, do: flipInY animated">
+					<img src="images/img1.png" alt="this is my project" class="img-responsive img-circle">
 					<h2>Project name 1</h2>
 					<h3>client</h3>
 					<p>
@@ -66,7 +83,7 @@
 
 				</div>
 				<div class="col-md-3 project-item col-sm-6  col-xs-10 col-xs-push- col-sm-push-01">
-					<img src="http://placehold.it/650x650" alt="this is my project" class="img-responsive img-circle">
+					<img src="images/img2.png" alt="this is my project" class="img-responsive img-circle">
 					<h2>Project name 2</h2>
 					<h3>client</h3>
 					<p>
@@ -75,7 +92,7 @@
 					<a href="" class="btn btn-default"> View more</a>
 				</div>
 				<div class="col-md-3 project-item col-sm-6  col-xs-10 col-xs-push- col-sm-push-01">
-					<img src="http://placehold.it/650x650" alt="this is my project" class="img-responsive img-circle">
+					<img src="images/img3.png" alt="this is my project" class="img-responsive img-circle">
 					<h2>Project name 3</h2>
 					<h3>client</h3>
 					<p>
@@ -85,7 +102,7 @@
 
 				</div>
 				<div class="col-md-3 project-item col-sm-6  col-xs-10 col-xs-push- col-sm-push-01">
-					<img src="http://placehold.it/650x650" alt="this is my project" class="img-responsive img-circle">
+					<img src="images/img4.png" alt="this is my project" class="img-responsive img-circle">
 					<h2>Project name 4</h2>
 					<h3>client</h3>
 					<p>
@@ -95,23 +112,23 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="container">
+		
+	<a name="about"></a>
+		<div class="container-fluid about">
 			<div class="row">
-				<div class="col-md-12 ">
-					<h1 class="text-center">About</h1>
+				<div class="col-md-6 col-md-push-3 content">
+						<h1>About</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco ip ex ea commodo consequat.
+						</p>
 				</div>
-				<div class="col-md-6 col-md-push-3`">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco ip ex ea commodo consequat.
-					</p>
-				</div>
+				
 			</div>
 		</div>
-		<div class="container">
+		<div class="container contact">
 			<div class="row">
 				<div class="col-md-12 ">
-					<h2 class="text-center">Contact</h2>
+					<h2 class="text-center" data-anijs="if: scroll, on: window, do: swing animated, before: scrollReveal">Contact</h2>
 				</div>
 				<div class="col-md-8">
 					<img src="http://placehold.it/650x450" alt="this is my location" class="img-responsive">
@@ -128,7 +145,17 @@
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/app.js"></script>
+		<script src="js/app-anijs.js"></script>
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
